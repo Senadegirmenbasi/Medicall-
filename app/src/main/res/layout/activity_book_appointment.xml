@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppointmentActivity"
+    android:background="@drawable/back19"
+    >
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:padding="16dp"
+        android:contentDescription="@string/back_button_description"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İsim Soyisim"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/editTextLBTFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="İsim Soyisim giriniz"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColorHighlight="#5c5f72"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adres"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextLBTAdress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Adresinizi giriniz"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHighlight="#5c5f72"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefon Numarası"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextLBTPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Telefon numaranızı giriniz"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColorHighlight="#5c5f72"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ücret"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextLBTpin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Ücret"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColorHighlight="#5c5f72"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Randevu Tarihi"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="Tarih Seçin"
+                android:inputType="date"
+                android:padding="16dp"
+                android:textColorHighlight="#5c5f72"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextLBTpin"/>
+
+            <Button
+                android:id="@+id/buttonAppDate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seç"
+                android:textColor="#ffffff"
+                android:background="@drawable/login_btn_background"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Randevu Saati"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="Saat Seçin"
+                android:inputType="date"
+                android:padding="16dp"
+                android:textColorHighlight="#5c5f72"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextLBTpin"/>
+
+            <Button
+                android:id="@+id/buttonAppTime"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seç"
+                android:textColor="#ffffff"
+                android:background="@drawable/login_btn_background"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAppointment"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_btn_background"
+            android:text="Randevu Oluştur"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Randevu Al"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
