@@ -1,10 +1,5 @@
 # Medikal Mobil Uygulaması
 
-**Geliştiriciler:** Beyza Bolat, Senanur Değirmenbaşı, Umut Karakoç  
-**Danışman:** Dr. Öğr. Üyesi Ekrem Başer  
-**Üniversite:** Düzce Üniversitesi, Bilgisayar Mühendisliği Bölümü  
-**Tez Dönemi:** 2023-2024 Bahar Dönemi
-
 ## Proje Özeti
 
 Medikal Mobil Uygulaması, kullanıcıların sağlık hizmetlerine kolayca erişim sağlamalarını ve sağlık durumlarını etkili bir şekilde yönetmelerini amaçlayan kapsamlı bir mobil uygulamadır. Uygulama, kullanıcıların doktor arama, randevu oluşturma, laboratuvar test sonuçlarına erişim, ilaç siparişi ve takibi, sağlık geçmişi yönetimi gibi birçok kritik özelliği bir araya getirir. Kullanıcı dostu bir arayüz ve modern tasarımıyla, sağlık hizmetlerine erişimi dijitalleştirerek kullanıcılara büyük kolaylıklar sunar.
